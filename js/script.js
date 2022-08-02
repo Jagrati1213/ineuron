@@ -17,14 +17,18 @@ $(".bar").click(function(){
 $(".navigation_list").toggle();
 });
 
-//profile popup
-$(document).ready(function(){
-    $("#user-icon").click(function(){
-        $(".modal-box").toggleClass('visuallyhidden');
-        $(".modal-box").toggleClass("modal-box-show");
-    });
-});
+//toggle the password
+$(".toggle-password").click(function() {
+    $(this).toggleClass("fa-eye fa-eye-slash");
 
+    var input = $($(this).attr("toggle"));
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } 
+    else {
+      input.attr("type", "password");
+    }
+  });
 var lottie_post= lottie.loadAnimation({
     container: document.getElementById("lottie_container"), // container for the lotties
     renderer: "svg",
