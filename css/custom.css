@@ -52,7 +52,7 @@
 .modal-body #button-sign{
     padding: 10px 0;
     margin-right: 10px;
-    color: var(--input-color);
+    color: #a2a4a7;
 }
 .modal-body .form-check-input:checked{  
     background-color: var(--dark_blue);
@@ -64,7 +64,7 @@
 .modal-footer .line p{
     width: 40%;
     height: 1px;
-    background: var(--input-color);
+    background:#a2a4a7;
     margin: 0;
 }
 .modal-footer .btn{
@@ -319,11 +319,20 @@ footer .copy-write a{
         padding: 1rem;
         margin: auto;
     }
-    .modal-footer .btn p{
+    .modal-footer{
+        margin-top: 12px;
+    }
+    .modal-content a{
+        font-size: 12px;
+    }
+    .modal-footer .btn p,
+    .modal-body .sign-in{
         font-size: small;
     }
-    .modal-footer .btn{
-        padding: 0.45rem;
+    .modal-footer .btn,
+    .modal-body .sign-in{
+        padding: 0.45rem 0.75rem;
+        width: 95%;
     }
     .name h1, .email p{
         font-size: 18px;
