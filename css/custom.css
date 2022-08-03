@@ -333,7 +333,7 @@ footer .copy-write a{
     .modal-body .sign-in{
         /* padding: 0.45rem 0.75rem; */
         width: 95%;
-        /* justify-content: center; */
+        justify-content: center;
     }
     .modal-footer .btn p{
         /* width: auto; */
