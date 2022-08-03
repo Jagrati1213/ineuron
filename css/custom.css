@@ -331,12 +331,11 @@ footer .copy-write a{
     }
     .modal-footer .btn,
     .modal-body .sign-in{
-        /* padding: 0.45rem 0.75rem; */
         width: 95%;
         justify-content: center;
     }
     .modal-footer .btn p{
-        /* width: auto; */
+        width: auto;
     }
     .name h1, .email p{
         font-size: 18px;
