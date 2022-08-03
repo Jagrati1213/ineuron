@@ -167,6 +167,7 @@ text-align: center  ;
     background: none;
     color: #B8C1EC;
     padding: 0.5rem;
+    pointer-events: none; 
 }
 
 .landing_banner_content{    

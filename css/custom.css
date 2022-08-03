@@ -3,6 +3,7 @@
     background:#FFFFFE;
     padding: 1.2rem 4rem; 
     cursor: pointer;
+    max-height: 95vh;
 }
 .modal-backdrop{
     z-index: 1;
@@ -15,7 +16,7 @@
     text-align: center;
     flex-direction: column;
     grid-column-gap:20px;
-    padding: 1rem;
+    padding: 0rem;
     border-bottom:none ;
 }
 .name h1,
@@ -32,7 +33,7 @@
 .modal .modal-footer{
    display: flex;
    flex-direction: column;
-   grid-gap:12px;
+   padding: 0;
    border-top: none;
 }
 .modal-body label{
@@ -96,7 +97,7 @@
 }
 .testimonial .test_main{
     height:100%;
-    gap: 2rem;
+    gap: 3rem;
 }
 .testimonial .test_box{
     width: 40%;
@@ -122,7 +123,6 @@
 .testimonial .test_details{
     display: flex;
     align-items: center;
-    flex-wrap:wrap;
     grid-gap: 12px;
     margin-bottom: 1rem;
 }
@@ -315,13 +315,24 @@ footer .copy-write a{
       font-size: 16px;
     }
     .modal-content{
-      padding: 1rem;
+        width: 90%;
+        padding: 1rem;
+        margin: auto;
+    }
+    .modal-footer .btn p{
+        font-size: small;
+    }
+    .modal-footer .btn{
+        padding: 0.45rem;
+    }
+    .name h1, .email p{
+        font-size: 18px;
     }
     .testimonial .test_box{
         width: fit-content;
     }
-    .testimonial .test_main {
-     gap:1.7rem;
+    .testimonial .test_details{
+      flex-wrap: wrap;
     }
     .social-icon a{
         width: 35px;
