@@ -4,6 +4,7 @@
     padding: 1.2rem 4rem; 
     cursor: pointer;
     max-height: 95vh;
+    height: fit-content; /* to adjust the overflow-y*/
 }
 .modal-backdrop{
     z-index: 1;
