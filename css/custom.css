@@ -1,10 +1,12 @@
 /***** user popup *****/
+.modal-body{
+    flex: inherit;
+}
 .modal-content{
     background:#FFFFFE;
     padding: 1.2rem 4rem; 
     cursor: pointer;
     max-height: 95vh;
-    height: fit-content; /* to adjust the overflow-y*/
 }
 .modal-backdrop{
     z-index: 1;
@@ -69,7 +71,7 @@
     margin: 0;
 }
 .modal-footer .btn{
-    width: 100%;
+    width: 95%;
     color: var(--dark_blue);
     background: transparent;
     border: 1px solid var(--dark_blue);
@@ -89,11 +91,24 @@
     width: 90%;
     text-align: justify;
 }
-
-/* ***** testimonials ***** */
+/****** silders *****/
+.achievers_slide,
+.inst_slider{
+    padding-top: 6rem !important; 
+}
+.achievers_slide .slides img{
+    width: 12rem;
+}
+.achievers_slide .slick-list,
+.inst_slider .slick-list {
+ padding-bottom: 5rem;
+}
+.inst_slider .slides img{
+    width: 10rem;
+}
+/****** testimonials ******/
 .testimonial{
     width: 100%;
-    min-height: 90vh;
     background:var(--bg_blue);
 }
 .testimonial .test_main{
@@ -102,10 +117,11 @@
 }
 .testimonial .test_box{
     width: 40%;
-    padding: 2rem ;
-    background: rgba(184, 193, 236, 0.6);
-    border: 1px solid var(--input-color);
-    border-radius: 8px;
+    padding: 1.5rem ;
+    background: #d5d9ec;
+    border: 0.25px solid #12162900;
+    box-shadow: 0px 4px 86px rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -128,31 +144,30 @@
     margin-bottom: 1rem;
 }
 .testimonial .test_details .img_box{
-    width: 100px;
-    height: 100px;
-    border-radius:50%;
+    width: 30%;
+    padding: 0;
 }
 .testimonial .test_details .img_box img{
   width: 100%;
   object-fit: cover;
 }
 .testimonial .test_details .content{
-   display: flex;
-   flex-direction: column;
+    width: 70%;
 }
 .testimonial .test_details .content h3{
-   font-size: 20px;
-   color: var(--dark_blue);
-   text-align: justify;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 0;
 }
 .testimonial .test_details .content p{
     font-size: 14px;
-    margin-bottom: 1rem;
+    margin-bottom:0;
     text-align: justify;
 }
 .testimonial .test_about p{
   text-align: justify;
-  font-size: 16px;
+  font-size: 13px;
+  margin: 0;
 }
 /***** Footer *****/
 footer{
@@ -165,9 +180,9 @@ footer .apply-container{
     flex-direction: row;
     margin: auto !important;
     width:fit-content !important;
-    height: 334px;
     flex-wrap: wrap;
-    transform: translate(10px,-27%);
+    transform: translateY(-50%);
+
 }
 .apply-box{
    width: 50%;
@@ -191,6 +206,8 @@ footer .apply-container{
 .apply-box h2{
     text-align: left;
     font-size: 2rem;
+    line-height: 2.2rem;
+    white-space: wrap;
 }
 .enroll-box{
     background: #171b2e;
@@ -277,7 +294,11 @@ footer .copy-write a{
             transform: translate(10px,-15%);
         }
  } 
- @media (max-width: 992px) {
+ @media (max-width: 992px){
+
+    .achievers_slide .slides img{
+        width: 100%;
+    }
     footer{
         margin-top: 4rem;
     } 
@@ -285,6 +306,7 @@ footer .copy-write a{
         transform: inherit;
         padding: 4rem 0;
     }
+   
  }
  @media (max-width: 768px) {   
     .testimonial .test_box{
@@ -332,8 +354,9 @@ footer .copy-write a{
     }
     .modal-footer .btn,
     .modal-body .sign-in{
-        width: 95%;
+        width: 80%;
         justify-content: center;
+        margin-bottom: 12px;
         padding: 0.45rem 0.75rem;
     }
     .modal-footer .btn p{
@@ -343,11 +366,20 @@ footer .copy-write a{
         font-size: 18px;
     }
     .testimonial .test_box{
-        width: fit-content;
-        margin-bottom: 12px;
+        width: 70%;
+        justify-content: center;
     }
     .testimonial .test_details{
       flex-wrap: wrap;
+      justify-content: center ;
+    }
+    .testimonial .test_box{
+      margin-bottom: 15px;
+     }
+    .testimonial .test_details .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .social-icon a{
         width: 35px;
@@ -365,11 +397,5 @@ footer .copy-write a{
     }
     footer h5{
         margin-bottom: 1rem;
-    }
-    .apply-box h2{
-        font-size:25px;
-    }
-    footer .apply-container{
-        grid-gap:20px
     }
  }

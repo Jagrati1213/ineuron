@@ -1,27 +1,7 @@
 :root{
     --theam_blue:#B8C1EC !important;
     --dark_blue:#232946 ;
-    --scrollbar-thumb:#232946af ;
     --bg_blue:#fafafd !important;
-}
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-  
-  /* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb);
-}
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background:var(--dark_blue);
 }
 *{
     margin: 0;
@@ -29,7 +9,15 @@
     box-sizing: border-box;
     text-align: center;
 }
-
+section{
+    overflow-x: hidden;
+}
+.bg_slider{
+    background: #edf0f4;
+}
+.slider_2{
+    gap: 2rem;
+}
 h1{
     font-weight: 700;
     font-size: 3rem;
@@ -37,6 +25,8 @@ h1{
 h2{
     font-size: 2.5rem;
     font-weight: 500;
+    line-height: 3.5rem;
+    flex-wrap: nowrap;
 }
 .p_bold{
     font-weight: 400;
@@ -44,12 +34,12 @@ h2{
     color: rgba(14, 23, 44, 0.8);
 }
 .p_big{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
 .und{
-
+    padding-bottom: 0.5rem;
     border-bottom: 3px solid #b97732;
 }
 
@@ -57,10 +47,11 @@ h2{
     width: 100%;
     margin: 0;
 }
-.main .navigations_main{
+.main section:nth-child(2){
     position: sticky ;
     top: 0;
     z-index: 33333;
+    overflow:visible!important;
 }
 .notification{
     width: 100%;
@@ -472,17 +463,25 @@ margin: 0.5rem;
         order: 2;
         background: white;
     }
+    
  }
  @media (max-width: 767px) { 
     /* .search{
         width: 100%;
     } */
+    
     .catogeries .img_box_sub{
         width: 48%;
     }
 
     .about_courses .about_main .img_box{
         width: 35%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.8rem;
     }
  }
  @media (max-width: 576px) { 
@@ -498,5 +497,18 @@ margin: 0.5rem;
     }
     .catogeries .img_box_sub{
         width: 60%;
+    }
+   
+    .p_bold{
+        font-size: 1rem;
+    }
+    .p_big{
+        font-size: 0.8rem;
+    }
+    .landing_banner_content{
+        text-align: center;
+    }
+    .btn{
+        margin: 0 auto;
     }
  }

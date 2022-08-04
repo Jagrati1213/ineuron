@@ -1,13 +1,19 @@
-// toggle the title 
-let title_chang=2;
-setInterval(() => {
-    title_chang++;
-    if(title_chang%2==0){
-        document.title="1 new message";
-    }
-    else
-    document.title="Affordable & Competent Courses | iNeuron.ai";
-}, 500);
+
+
+
+
+AOS.init();
+
+
+
+
+
+
+$(document).ready(function() {
+    console.log( "ready!" );
+   
+});
+
 
 $(".hide").click(function(){
 $(".notification").hide();
@@ -29,7 +35,6 @@ $(".toggle-password").click(function() {
       input.attr("type", "password");
     }
   });
-
 var lottie_post= lottie.loadAnimation({
     container: document.getElementById("lottie_container"), // container for the lotties
     renderer: "svg",
@@ -37,8 +42,6 @@ var lottie_post= lottie.loadAnimation({
     autoplay: true,
     loop: true,
   });
-
-
   $(".slider").slick({
     dots: false,
     infinite: true,
@@ -75,3 +78,58 @@ var lottie_post= lottie.loadAnimation({
     },
       ]
 });
+$(".slider_2").slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  cssEase: "ease-in-out",
+
+  responsive: [{
+      breakpoint: 1025,
+      settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+      }
+  },
+
+ {
+      breakpoint: 768,
+      settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+      }
+  },
+  {
+      breakpoint: 400,
+      settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+      }
+  },
+    ]
+});
+$('.slider_2').slick('setPosition').slick();
+
+$(window).on('load', function() {
+    console.log("zccv");
+    $('.slider_2').slick('setPosition').slick();
+ });
+// toggle the title 
+let title_chang=2;
+setInterval(() => {
+  
+   
+    title_chang++;
+    if(title_chang%2==0){
+        document.title="1 new message";
+    }
+    else
+    document.title="Affordable & Competent Courses | iNeuron.ai";
+}, 800);
+
+
