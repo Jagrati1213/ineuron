@@ -25,7 +25,8 @@ $(".notification").hide();
 });
 
 $(".bar").click(function(){
-$(".navigation_list").toggle();
+    $("#tgl").toggleClass("fa-bars-staggered fa-xmark");
+    $(".navigation_list").toggle();
 });
 
 //toggle the password
@@ -124,7 +125,7 @@ $(window).on('load', function() {
     console.log("zccv");
     $('.slider_2').slick('setPosition').slick();
  });
- 
+
 // toggle the title 
 let title_chang=2;
 setInterval(() => {
