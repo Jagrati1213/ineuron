@@ -343,6 +343,7 @@ footer .copy-write a{
     }
     .testimonial .test_box{
         width: fit-content;
+        margin-bottom: 12px;
     }
     .testimonial .test_details{
       flex-wrap: wrap;
@@ -363,5 +364,11 @@ footer .copy-write a{
     }
     footer h5{
         margin-bottom: 1rem;
+    }
+    .apply-box h2{
+        font-size:25px;
+    }
+    footer .apply-container{
+        grid-gap:20px
     }
  }
