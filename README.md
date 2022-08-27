@@ -1,5 +1,6 @@
 # Hackathon
-This project is for Hackathon
+This project was Teammate project.\
+my role on that was design some sections.
 ### used language 
 - Html
 - CSS
