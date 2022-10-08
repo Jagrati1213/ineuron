@@ -1,4 +1,4 @@
-# Hackathon
+# Hackathon -Ineuron UI
 It was Teammates project.\
 Devloyed [link](https://jagrati1213.github.io/ineuron/)
 
